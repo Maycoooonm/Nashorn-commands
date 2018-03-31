@@ -18,10 +18,10 @@ if (cores[selection] != null) {
     var cor = getGuild().getRoleById(cores[selection])
     if (author().hasRole(cor)) {
         author().removeRole(cor)
-        reply(" cor removida!");
+        return reply(" cor removida!");
     } else {
       author().addRole(cor)
-      reply("cor adicionada!");
+     return reply("cor adicionada!");
     }
 }
 
